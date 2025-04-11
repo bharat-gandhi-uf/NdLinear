@@ -14,8 +14,10 @@ The CLIP (Contrastive Language-Image Pre-training) model architecture was introd
 The implementation consists of two main components:
 
 1. **Image Encoder**: Uses a Vision Transformer (ViT) from Hugging Face's Transformers library to encode images into embedding vectors.
+   ***Imp***: NdLinear is used here by replacing nn.linear layer.
 
 2. **Text Encoder**: Uses DistilBERT from Hugging Face's Transformers library to encode text into embedding vectors.
+   ***Imp***: NdLinear is used here by replacing nn.linear layer.
 
 Both encoders project their respective outputs to a shared embedding space of the same dimension (configurable, default is 256). The model is trained using a contrastive loss function that maximizes the similarity between matching image-text pairs while minimizing the similarity for non-matching pairs.
 
