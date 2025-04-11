@@ -1,9 +1,6 @@
 # NdLinear
 This Repo shocases usage of NdLinear on a CLIP type Vision Language Deep Learning Model, with the use of "vit-base-patch16-224" Vision transformer from Google and "distilbert-base-uncased" for Language understanding. For more info, look at the Model Architecture section.
 # Process
-# CLIP (Contrastive Language-Image Pre-training) Implementation
-
-This repository contains a PyTorch implementation of a CLIP-like model for image-text matching. CLIP models are trained to learn a joint embedding space for images and text, enabling zero-shot image classification and cross-modal retrieval.
 
 ## Overview
 
@@ -115,7 +112,7 @@ The model is evaluated based on:
 - Image-to-text retrieval accuracy (top-1 and top-5)
 - Text-to-image retrieval accuracy (top-1 and top-5)
 
-These metrics are saved as plots in the results directory.
+NdLinear performed at par with nn.Linear layer, which I believe was due to this not being a high dimensional data use case.
 
 ## References
 
